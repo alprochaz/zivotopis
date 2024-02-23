@@ -1,12 +1,28 @@
 body {
     color: #282425;	/*barva pisma*/
-    background-color: rgb(214, 222, 227);
+    background-color: aliceblue;
     font-family: arial, sans-serif;
     font-size: 20px;
     line-height: 1.5;
     margin: 0;
     scroll-behavior: smooth;
 }
+
+header  {
+    background-image:  url(foto/header3.jpg);
+    padding: 3% 5% ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hlavicka {   /*portret a jmeno*/
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-flow: row wrap;
+   
+  }
 
 section {
     padding: 20px 4% 30px 4%;
@@ -19,20 +35,20 @@ p {
 }
   
 a {
-    color:#a195c8;
+    color:#99989b;
 }
   
 h1 {                     
       font-size: 2.5rem;	
       text-align: center;
-      color: rgb(48, 100, 134);
-
+      color: aliceblue;
+      text-shadow: 0 10px 30px rgba(0, 0, 0, 1);
 
 }
 
 h2  {
     font-size: 2rem;	
-    color: rgb(48, 100, 134);
+    color: #2090a2;
     margin-top: 2em;
 }
 
@@ -45,23 +61,35 @@ h4  {
     margin: 20px 0px 0px 0px;
 }
 
-.portret {
-    width: 50%;
+.slogan {
+    font-family: caveat;
+    font-size: 2rem;
+    color: aliceblue;
+    text-align: center;
+    margin: 0;
+    text-shadow: 0 10px 30px rgba(0, 0, 0, 1);
+}
+@font-face {
+    font-family: caveat;
+    src: url(Caveat-Regular.ttf);
+ }
+
+.portret2 {
+    width: 150px;
     height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+
+
     border: 5px solid aliceblue;
     border-radius: 50%;
-
 }
+
 .about {
     padding: 50px 10%;
 } 
 
 .kontakt {
     font-size: 15px;
-    padding: 50px 0px 50px 10%  ;
+    padding: 20px 0px 20px 10%  ;
 
 }
 
@@ -74,7 +102,7 @@ h4  {
   
 .column-left {
     flex: 30%;
-    background-color:  rgb(48, 100, 134);
+    background-color:  #2090a2;
     min-height: 100vh;
     color: aliceblue;
 
