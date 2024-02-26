@@ -9,7 +9,7 @@ body {
 }
 
 header  {
-    background-image:  url(foto/header3.jpg);
+    background-image:  url(foto/header.jpg);
     padding: 3% 5% ;
     background-repeat: no-repeat;
     background-position: center;
@@ -19,13 +19,12 @@ header  {
 .hlavicka {   /*portret a jmeno*/
     display:flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-flow: row wrap;
    
   }
 
 section {
-    padding: 20px 4% 30px 4%;
     overflow: auto;
 }
 
@@ -35,10 +34,20 @@ p {
 }
   
 a {
-    color:#99989b;
+    color: #08505b;
 }
+
+i {
+   margin-right: 5px;
+}
+.fa-brands {    /*jen LinkedIn a FB*/
+    font-size: 20px;
+    margin-right: 10px;
+
+}
+
   
-h1 {                     
+h1 {               /*Jmeno*/      
       font-size: 2.5rem;	
       text-align: center;
       color: aliceblue;
@@ -46,19 +55,20 @@ h1 {
 
 }
 
-h2  {
+h2  {              /*pravy sloupec - Dovednosti, Prace*/
     font-size: 2rem;	
     color: #2090a2;
-    margin-top: 2em;
+    margin-top: 1.5em;
 }
 
-h3  {
+h3  {               /*levy sloupec - Kontakt, Vzdelani*/
     margin: 20px 0px 10px 0px;
     border-bottom: 2px solid aliceblue;
 }
 
-h4  {
-    margin: 20px 0px 0px 0px;
+h4  {               /*pracovni pozice*/
+    font-size: 1.5rem;
+    margin: 10px 0px 10px 0px;
 }
 
 .slogan {
@@ -77,15 +87,9 @@ h4  {
 .portret2 {
     width: 150px;
     height: auto;
-
-
     border: 5px solid aliceblue;
     border-radius: 50%;
 }
-
-.about {
-    padding: 50px 10%;
-} 
 
 .kontakt {
     font-size: 15px;
@@ -93,9 +97,13 @@ h4  {
 
 }
 
+.about {
+    padding: 20px 10%;
+} 
+
 .row {
     display: flex;
-    flex-flow: row nowrap;  /*zmeni se pro mensi display na wrap*/
+    flex-flow: row wrap; 
     align-items: stretch;
 
   }
@@ -107,8 +115,26 @@ h4  {
     color: aliceblue;
 
   }
+.column-left a {
+    color: white;
+}
 
 .column-right {
     flex: 70%;
 
   }
+
+.rok  {
+    margin-top: 30px;
+    margin-bottom: 0px;
+    border-bottom: 2px solid #2090a2;
+}
+
+footer {
+    text-align: right;
+    color: white;
+    font-size: 0.75em;
+    background-color: #08505b;
+    padding: 5px 20px;
+
+}
